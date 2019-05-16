@@ -2,6 +2,7 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
+      <router-link to="/Myhome">myhome</router-link> |
       <router-link to="/about">About</router-link>
     </div>
     <router-view />
@@ -18,6 +19,9 @@
 }
 #nav {
   padding: 30px;
+
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0) -1%,rgba(0,0,0,0) 1%,rgba(0,0,0,0) 5%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+
   a {
     font-weight: bold;
     color: #2c3e50;
