@@ -2,6 +2,10 @@ import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/Home.vue";
 import Find  from "./components/Search.vue";
+import Talkbox from "./components/fireBase/Talkbox.vue";
+import Canvas  from "./components/Canvas.vue";
+import Anime  from "./components/Anime.vue"
+
 Vue.use(Router);
 
 export default new Router({
@@ -35,6 +39,27 @@ export default new Router({
       path: "/Find",
       name: "Find",
       component: Find
+    },
+    {
+      path:"/Talkbox",
+      name:'Talkbox',
+      component: Talkbox
+    },
+    {
+      path:"/Banner",
+      name:'Banner',
+      component: () =>
+        import("./components/Banner.vue")
+    },
+    {
+      path:"/Canvas",
+      name:"Canvas",
+      component : Canvas
+    },
+    {
+      path:"/Anime",
+      name:"Anime",
+      component : Anime
     }
   ]
 });

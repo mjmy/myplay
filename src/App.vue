@@ -3,6 +3,10 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/Myhome">myhome</router-link> |
+      <router-link to="/Talkbox">TalkBox</router-link> |
+      <router-link to="/Banner">Banner</router-link> |
+      <router-link to="/Canvas">Canvas</router-link> |
+      <router-link to="/Canvas">Anime</router-link> |
       <router-link to="/about">About</router-link>
     </div>
     <router-view />
