@@ -5,7 +5,8 @@ import Find  from "./components/Search.vue";
 import Talkbox from "./components/fireBase/Talkbox.vue";
 import Canvas  from "./components/Canvas.vue";
 import Anime  from "./components/Anime.vue"
-
+import ivHome  from "./components/iview/ivHome.vue"
+import mescroll  from "./components/mescroll.vue"
 Vue.use(Router);
 
 export default new Router({
@@ -60,6 +61,17 @@ export default new Router({
       path:"/Anime",
       name:"Anime",
       component : Anime
+    },
+    {
+      path:'/iview',
+      name:'ivHome',
+      component:ivHome,
+    },
+    {
+      path:'/mescroll',
+      name:'mescroll',
+      component:mescroll
     }
+
   ]
 });

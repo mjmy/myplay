@@ -1,12 +1,14 @@
 <template>
   <div id="app">
-    <div id="nav">
+    <div id="nav" v-if="$route.path != '/iView'">
       <router-link to="/">Home</router-link> |
       <router-link to="/Myhome">myhome</router-link> |
       <router-link to="/Talkbox">TalkBox</router-link> |
       <router-link to="/Banner">Banner</router-link> |
       <router-link to="/Canvas">Canvas</router-link> |
-      <router-link to="/Canvas">Anime</router-link> |
+      <router-link to="/Anime">Anime</router-link> |
+      <router-link to="/iView">iView</router-link> |
+      <router-link to="/mescroll">mescroll</router-link> |
       <router-link to="/about">About</router-link>
     </div>
     <router-view />
@@ -20,6 +22,9 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 #nav {
   padding: 30px;
@@ -34,4 +39,5 @@
     }
   }
 }
+
 </style>

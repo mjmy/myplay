@@ -18,20 +18,21 @@ import callApi from "./mixins/callApi";
 
 import anime from 'animejs/lib/anime.es.js';
 
-import iView from 'iview';
+import iview from 'iview';
 import 'iview/dist/styles/iview.css';    // 使用 CSS
+import wordcloud from 'wordcloud'
 
 require('video.js/dist/video-js.css');
 require('vue-video-player/src/custom-theme.css');
 Vue.use(VideoPlayer);
 Vue.use(VuePlyr);
-Vue.use(iView);
+Vue.use(iview);
 Vue.mixin(callApi);
 Vue.prototype.$http = axios;
 Vue.config.productionTip = false;
 
 Vue.prototype.$anime = anime; 
-
+Vue.prototype.$wordcloud = wordcloud;
 new Vue({
   router,
   store,
