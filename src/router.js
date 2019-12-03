@@ -7,6 +7,7 @@ import Canvas  from "./components/Canvas.vue";
 import Anime  from "./components/Anime.vue"
 import ivHome  from "./components/iview/ivHome.vue"
 import mescroll  from "./components/mescroll.vue"
+import map  from "./components/map.vue"
 Vue.use(Router);
 
 export default new Router({
@@ -71,6 +72,11 @@ export default new Router({
       path:'/mescroll',
       name:'mescroll',
       component:mescroll
+    },
+    {
+      path:'/maps',
+      name:'maps',
+      component:map
     }
 
   ]

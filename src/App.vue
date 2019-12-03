@@ -9,7 +9,8 @@
       <router-link to="/Anime">Anime</router-link> |
       <router-link to="/iView">iView</router-link> |
       <router-link to="/mescroll">mescroll</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/about">About</router-link> |
+      <router-link to="/maps">Map</router-link>
     </div>
     <router-view />
   </div>
@@ -29,7 +30,13 @@
 #nav {
   padding: 30px;
 
-  background: -webkit-linear-gradient(top, rgba(0,0,0,0) -1%,rgba(0,0,0,0) 1%,rgba(0,0,0,0) 5%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0) -1%,
+    rgba(0, 0, 0, 0) 1%,
+    rgba(0, 0, 0, 0) 5%,
+    rgba(0, 0, 0, 0.65) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
 
   a {
     font-weight: bold;
@@ -39,5 +46,4 @@
     }
   }
 }
-
 </style>
