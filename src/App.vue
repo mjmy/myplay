@@ -10,7 +10,8 @@
       <router-link to="/iView">iView</router-link> |
       <router-link to="/mescroll">mescroll</router-link> |
       <router-link to="/about">About</router-link> |
-      <router-link to="/maps">Map</router-link>
+      <router-link to="/maps">Map</router-link> |
+      <router-link to="/dd">Drag and Drop</router-link> |
     </div>
     <router-view />
   </div>
