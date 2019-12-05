@@ -137,6 +137,9 @@ export default {
       };
       this.$Message.error(config);
     }
+  },
+  beforeDestroy() {
+    navigator.geolocation.clearWatch(); //清除监测
   }
 };
 </script>
