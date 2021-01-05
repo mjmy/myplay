@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "animejs": "^3.1.0",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "firebase": "^6.1.0",
     "iview": "^3.5.3",
     "mescroll.js": "^1.4.1",
